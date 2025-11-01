@@ -20,6 +20,7 @@ This project is built using:
 - Apply for an IPO (demo workflow)
 - See price band, lot size, open/close dates
 
+
 ### 🛠 Admin Features
 - Add/Edit IPO listings  
 *(Basic version — no authentication in this demo)*
