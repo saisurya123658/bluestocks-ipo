@@ -37,5 +37,3 @@ This project is built using:
 | Communication | REST APIs / JSON |
 
 
-## 📂 Folder Structure
-
