@@ -32,4 +32,3 @@ This project is built using:
 | Backend | Node.js, Express |
 | Database | PostgreSQL |
 | Communication | REST APIs / JSON |
-
