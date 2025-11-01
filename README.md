@@ -25,7 +25,6 @@ This project is built using:
 - Add/Edit IPO listings  
 *(Basic version — no authentication in this demo)*
 
-
 ## 🧠 Tech Stack
 
 | Layer | Technology |
