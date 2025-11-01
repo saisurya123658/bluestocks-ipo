@@ -11,7 +11,7 @@ This project is built using:
 
 > 🚀 Educational project — created to practice MERN-style architecture with PostgreSQL, routing, REST APIs, and UI.
 
----
+--
 
 ## 📌 Features
 
