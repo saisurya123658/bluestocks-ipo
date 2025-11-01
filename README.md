@@ -34,4 +34,3 @@ This project is built using:
 | Database | PostgreSQL |
 | Communication | REST APIs / JSON |
 
-
