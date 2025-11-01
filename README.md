@@ -26,7 +26,6 @@ This project is built using:
 *(Basic version — no authentication in this demo)*
 
 
-
 ## 🧠 Tech Stack
 
 | Layer | Technology |
