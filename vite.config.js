@@ -12,4 +12,4 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(import.meta.dirname, "./src"),
     },
   },
-}));
+}));
