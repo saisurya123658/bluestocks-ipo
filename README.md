@@ -14,19 +14,12 @@ Bluestock_Project/
 ├── backend/ # Node.js + Express + MongoDB (API Server)
 └── client/ # React.js Frontend (User Interface)
 
-yaml
-Copy code
-
----
-
 ## 🧭 Clone This Project
-
 To get a copy of this project up and running on your local machine, follow these steps 👇
-
 ### Step 1: Clone the Repository
-
-```bash
+```
 git clone https://github.com/KaranSingh52ED/Bluestock_Project.git
+
 ⚙️ Backend Setup (Node.js + Express + MongoDB)
 Step 2: Navigate to the Backend Folder
 bash
@@ -79,7 +72,7 @@ Copy code
 npm start
 The frontend server will run at:
 👉 http://localhost:3000
-
+```
 🧩 Features
 ✅ Add New IPO Listings
 ✅ Update or Edit IPO Details
@@ -100,31 +93,24 @@ Version Control	Git & GitHub
 
 🧑‍💻 API Documentation
 Once the backend server is running, you can explore all APIs using:
-
 Postman, or
-
 Visit http://localhost:8001/api
 
 ☁️ MongoDB Atlas Setup (Optional for Cloud Database)
 If you don’t have MongoDB installed locally, follow these quick steps:
-
 Go to MongoDB Atlas.
-
 Sign up or log in.
-
 Create a new Cluster (Free Tier works fine).
-
 Click on Database Access → Add a new user with a strong password.
-
 Go to Network Access → Allow access from all IPs (0.0.0.0/0).
-
 Get your Connection String (URI) and replace it in .env:
-
 ini
 Copy code
 MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/bluestock
+
+
 🧑‍🤝‍🧑 Contributors
-Karan Singh — Email (Team Lead & Backend SDE)
+saisurya — (Team Lead & Backend SDE)
 
 📜 License
 This project is licensed under the Bluestock Fintech License.
@@ -132,22 +118,12 @@ For more details, visit 👉 Bluestock Fintech
 
 💡 Quick Start Summary
 Command	Description
-git clone <repo-url>	Clone the project
+git clone <repo-url>	: Clone the project
 cd backend && npm install	Install backend dependencies
 cd client && npm install	Install frontend dependencies
 npm start (in both folders)	Run backend and frontend servers
 Visit http://localhost:3000	Access the web app
 
-📷 Screenshot (Optional)
-Add a preview screenshot of your app here once deployed or running locally:
-
-scss
-Copy code
-![Bluestock IPO Management Dashboard](screenshot.png)
-🌐 Deployment (Optional)
-To deploy this project:
-
-Frontend: Use Vercel or Netlify
 
 Backend: Use Render or Railway
 
