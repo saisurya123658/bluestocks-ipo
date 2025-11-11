@@ -16,6 +16,7 @@ Bluestock_Project/
 └── client/    # React.js Frontend (User Interface)
 ```
 
+
 ---
 
 ## 🧽 Clone This Project
