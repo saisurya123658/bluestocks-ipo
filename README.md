@@ -116,9 +116,13 @@ The frontend server will run at:
 ✅ Update or Edit IPO Details
 
 ✅ Delete IPO Records
+
 ✅ View All Listed IPOs
+
 ✅ Search & Filter IPOs
+
 ✅ Secure Authentication using JWT
+
 ✅ RESTful API Architecture
 
 ---
