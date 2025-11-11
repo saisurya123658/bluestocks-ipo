@@ -205,3 +205,10 @@ To deploy this project:
 ---
 
 💙 **Developed with passion by the Bluestock Team**
+
+## ⭐ Support
+
+If you like my projects or found them helpful, please consider giving a **star** 🌟 to support my work — it really motivates me to create more amazing projects!
+👉 [Click here to Star my GitHub Profile](https://github.com/saisurya123658)
+[![GitHub stars](https://img.shields.io/github/stars/saisurya123658?style=social)](https://github.com/saisurya123658)
+
