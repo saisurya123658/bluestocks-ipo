@@ -112,7 +112,9 @@ The frontend server will run at:
 ## 🧩 Features
 
 ✅ Add New IPO Listings
+
 ✅ Update or Edit IPO Details
+
 ✅ Delete IPO Records
 ✅ View All Listed IPOs
 ✅ Search & Filter IPOs
@@ -185,13 +187,6 @@ For more details, visit 👉 [Bluestock Fintech](https://bluestock.in/)
 
 ---
 
-## 📷 Screenshot (Optional)
-
-Add a preview screenshot of your app once deployed or running locally:
-
-```markdown
-![Bluestock IPO Management Dashboard](screenshot.png)
-```
 
 ---
 
