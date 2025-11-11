@@ -1,149 +1,154 @@
-## IPO Management System
+# 🚀 Bluestock IPO Management System
 
-The **BlueStock IPO Management System** is designed for listing IPOs with full CRUD (Create, Read, Update, Delete) operations.
-
-The project is divided into two applications that need to be run individually on different servers:
-
-```bash
-Bluestock_Project\backend  # Backend application directory
-Bluestock_Project\client   # Client application directory
-```
+The **Bluestock IPO Management System** is a full-stack web application built using the **MERN stack (MongoDB, Express.js, React.js, Node.js)**.  
+It allows users to perform complete **CRUD (Create, Read, Update, Delete)** operations for managing IPO listings efficiently.
 
 ---
 
-To include instructions on how to cloned  the project in your documentation, you can add a section like this:
+## 📁 Project Structure
+
+This project consists of two separate applications that must be run on different servers:
+
+Bluestock_Project/
+│
+├── backend/ # Node.js + Express + MongoDB (API Server)
+└── client/ # React.js Frontend (User Interface)
+
+yaml
+Copy code
 
 ---
 
-## Clone This Project
+## 🧭 Clone This Project
 
-To get a copy of this project up and running on your local machine, follow these steps:
+To get a copy of this project up and running on your local machine, follow these steps 👇
 
-## Clone the Repository
+### Step 1: Clone the Repository
 
 ```bash
 git clone https://github.com/KaranSingh52ED/Bluestock_Project.git
-```
-## Installation
+⚙️ Backend Setup (Node.js + Express + MongoDB)
+Step 2: Navigate to the Backend Folder
+bash
+Copy code
+cd Bluestock_Project/backend
+Step 3: Install Dependencies
+bash
+Copy code
+npm install
+Step 4: Create a .env File
+Create a .env file in the backend/ directory and add your environment variables:
 
-### Step 1: Create Virtual Environments
+env
+Copy code
+PORT=8001
+MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/bluestock
+JWT_SECRET=your_jwt_secret_key
 
-First, create virtual environments for both the backend and client in their respective directories:
+EMAIL_USER=your_email@example.com
+EMAIL_PASS=your_password
+EMAIL_FROM=your_email@example.com
+⚠️ Replace <username> and <password> with your MongoDB credentials.
+You can use MongoDB Atlas for a free cloud database.
 
-```bash
-# For Backend
-cd Bluestock_Project\backend
-python3 -m venv backenv
+Step 5: Run the Backend Server
+bash
+Copy code
+npm start
+The backend server will start at:
+👉 http://localhost:8001
 
-# For Client
-cd Bluestock_Project\client
-python3 -m venv frontenv
-```
+💻 Frontend Setup (React.js)
+Step 6: Navigate to the Client Folder
+bash
+Copy code
+cd ../client
+Step 7: Install Dependencies
+bash
+Copy code
+npm install
+Step 8: Create a .env File (Optional)
+You can create a .env file in the client/ directory for the API base URL:
 
-### Step 2: Activate the Virtual Environments
+env
+Copy code
+REACT_APP_API_URL=http://localhost:8001
+Step 9: Run the React Development Server
+bash
+Copy code
+npm start
+The frontend server will run at:
+👉 http://localhost:3000
 
-Next, activate the virtual environments in separate terminal windows:
+🧩 Features
+✅ Add New IPO Listings
+✅ Update or Edit IPO Details
+✅ Delete IPO Records
+✅ View All Listed IPOs
+✅ Search & Filter IPOs
+✅ Secure Authentication using JWT
+✅ RESTful API Architecture
 
-**For Backend:**
+🛠️ Tech Stack
+Layer	Technology
+Frontend	React.js, Axios, Tailwind CSS / Material UI
+Backend	Node.js, Express.js
+Database	MongoDB (via Mongoose)
+Authentication	JWT (JSON Web Token)
+Email Service	Nodemailer
+Version Control	Git & GitHub
 
-```bash
-   source backenv/bin/activate 
-```
+🧑‍💻 API Documentation
+Once the backend server is running, you can explore all APIs using:
 
-**For Client:**
+Postman, or
 
-```bash
-   source frontenv/bin/activate 
-```
+Visit http://localhost:8001/api
 
-### Step 3: Install Dependencies in the Backend Environment
+☁️ MongoDB Atlas Setup (Optional for Cloud Database)
+If you don’t have MongoDB installed locally, follow these quick steps:
 
-Once the backend virtual environment (`v-backend`) is activated, install the backend dependencies:
+Go to MongoDB Atlas.
 
-```bash
-cd Bluestock_Project\backend\API\
-pip install -r requirements.txt
-```
+Sign up or log in.
 
-### Step 4: Set Up Your `.env` File
+Create a new Cluster (Free Tier works fine).
 
-Create a `.env` file in the backend directory and add the following configurations:
+Click on Database Access → Add a new user with a strong password.
 
-```bash
-EMAIL_USER='your_email_user'
-EMAIL_PASS='your_password'
-EMAIL_FROM='your_email'
+Go to Network Access → Allow access from all IPs (0.0.0.0/0).
 
-PGHOST='ep-fancy-silence-a1v6jcff.ap-southeast-1.aws.neon.tech'
-PGDATABASE='bluestockdb'
-PGUSER='bluestockdb_owner'
-PGPASSWORD='GFb7jmB1WNEg'
-```
+Get your Connection String (URI) and replace it in .env:
 
-You can adjust the database settings as needed.
+ini
+Copy code
+MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/bluestock
+🧑‍🤝‍🧑 Contributors
+Karan Singh — Email (Team Lead & Backend SDE)
 
-### Step 5: Run Database Migrations
+📜 License
+This project is licensed under the Bluestock Fintech License.
+For more details, visit 👉 Bluestock Fintech
 
-Run the database migrations to set up the database schema:
+💡 Quick Start Summary
+Command	Description
+git clone <repo-url>	Clone the project
+cd backend && npm install	Install backend dependencies
+cd client && npm install	Install frontend dependencies
+npm start (in both folders)	Run backend and frontend servers
+Visit http://localhost:3000	Access the web app
 
-```bash
-python3 manage.py migrate
-```
+📷 Screenshot (Optional)
+Add a preview screenshot of your app here once deployed or running locally:
 
-### Step 6: Create a Superuser
+scss
+Copy code
+![Bluestock IPO Management Dashboard](screenshot.png)
+🌐 Deployment (Optional)
+To deploy this project:
 
-Create a superuser for managing the application:
+Frontend: Use Vercel or Netlify
 
-```bash
-python3 manage.py createsuperuser
-```
+Backend: Use Render or Railway
 
-### Step 7: Start the Development Server
-
-Start the backend development server on port `8001`:
-
-```bash
-python3 manage.py runserver 8001
-```
-
-### Access the Admin Interface
-
-Open your web browser and go to `http://127.0.0.1:8001/admin`. Log in using the superuser credentials to manage users and admins.
-
-### API Documentation
-
-For more details, visit the [API Documentation](https://github.com/bitz-1/bluestock-ipo-rest-api).
-
-### Step 8: Install Dependencies in the Client Environment
-
-Once the client virtual environment (`frontenv`) is activated, install the client dependencies:
-
-```bash
-cd client\frontend\
-pip install -r requirements.txt
-```
-
-### Step 9: Run Database Migrations for the Client
-
-Run the database migrations for the client application:
-
-```bash
-python manage.py migrate
-```
-
-### Step 10: Start the Client Server
-
-Start the client development server on port `8000`:
-
-```bash
-python manage.py runserver 8000
-```
-
----
-## Contribution
-- **Karan Singh** - [email](mailto:karansingh999703@gmail.com)(Team Lead & Backend SDE)
----
-
-## License
-This project is licensed under the Bluestock Fintech License. For more details, visit [Bluestock Fintech](https://bluestock.in/).
----
+Database: Use MongoDB Atlas
