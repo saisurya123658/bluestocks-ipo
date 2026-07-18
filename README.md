@@ -9,7 +9,7 @@ It allows users to perform complete **CRUD (Create, Read, Update, Delete)** oper
 
 This project consists of two separate applications that must be run on different servers:
 
-```
+``` 
 Bluestock_Project/
 │
 ├── backend/   # Node.js + Express + MongoDB (API Server)
