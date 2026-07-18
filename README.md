@@ -4,7 +4,7 @@ The **Bluestock IPO Management System** is a full-stack web application built us
 It allows users to perform complete **CRUD (Create, Read, Update, Delete)** operations for managing IPO listings efficiently.
 
 ---
-
+ 
 ## 📁 Project Structure
 
 This project consists of two separate applications that must be run on different servers:
